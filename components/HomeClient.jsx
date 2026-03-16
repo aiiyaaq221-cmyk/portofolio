@@ -26,48 +26,47 @@ export default function HomeClient() {
 
 
       {/* HERO */}
-      <section id="home" className="container mx-auto h-screen flex items-center">
+      <section id="home" className="container mx-auto min-h-screen flex items-center">
 
-        <div className="grid grid-cols-12 w-full">
+  <div className="grid grid-cols-1 md:grid-cols-12 w-full">
 
-          <div className="col-span-6 flex items-center">
+    {/* TEXT */}
+    <div className="md:col-span-6 flex items-center justify-center md:justify-start">
+      <div className="pt-20 text-center md:text-left">
 
-            <div className="pt-20">
-
-              <div className="text-[#FF9FFC] text-5xl font-bold mb-4">
-                <TextType
-                  text={[
-                    "Halo, saya S. Aulia Maruapey",
-                    "UI/UX Designer",
-                    "Selamat datang di Portofolio Saya"
-                  ]}
-                  typingSpeed={80}
-                  pauseDuration={1500}
-                  showCursor={true}
-                  cursorCharacter="|"
-                />
-              </div>
-
-              <BlurText
-                text="Saya merancang tampilan antarmuka digital yang modern, intuitif, dan responsif menggunakan Figma."
-                delay={150}
-                animateBy="words"
-                direction="top"
-                className="text-2xl text-white"
-              />
-
-            </div>
-
-          </div>
-
-          <div className="col-span-6 flex justify-center">
-            <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
-          </div>
-
+        <div className="text-[#FF9FFC] text-3xl md:text-5xl font-bold mb-4">
+          <TextType
+            text={[
+              "Halo, saya S. Aulia Maruapey",
+              "UI/UX Designer",
+              "Selamat datang di Portofolio Saya"
+            ]}
+            typingSpeed={80}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+          />
         </div>
 
-      </section>
+        <BlurText
+          text="Saya merancang tampilan antarmuka digital yang modern, intuitif, dan responsif menggunakan Figma."
+          delay={150}
+          animateBy="words"
+          direction="top"
+          className="text-lg md:text-2xl text-white"
+        />
 
+      </div>
+    </div>
+
+    {/* LANYARD */}
+    <div className="md:col-span-6 flex justify-center mt-10 md:mt-0">
+      <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
+    </div>
+
+  </div>
+
+</section>
 
       {/* ABOUT + SKILLS */}
       <section id="about" className="py-32 max-w-7xl mx-auto">

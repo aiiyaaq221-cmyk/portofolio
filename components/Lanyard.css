@@ -1,11 +1,36 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* lanyard */
 .lanyard-wrapper {
   position: relative;
-  z-index: 0;
   width: 100%;
+  max-width: 500px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1);
-  transform-origin: center;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column; /* ubah dari samping menjadi atas-bawah */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .lanyard-wrapper {
+    order: 2; /* pastikan di bawah */
+    height: auto;
+    min-height: 60vh;
+    transform: scale(0.8);
+  }
+
 }
