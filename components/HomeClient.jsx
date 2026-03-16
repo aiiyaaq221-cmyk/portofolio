@@ -460,11 +460,8 @@ export default function HomeClient() {
               <button className="w-full bg-[#FF9FFC] text-black py-3 rounded-lg font-semibold hover:scale-105 transition">
                 Send
               </button>
-
             </div>
-
           </div>
-
         </div>
 
 
@@ -475,7 +472,7 @@ export default function HomeClient() {
             Github
           </a>
 
-          <a href="#" className="hover:text-[#FF9FFC] transition text-xl">
+          <a href="https://www.instagram.com/1zyaaa_?igsh=Nnd1eXQ0anRiYTg1" className="hover:text-[#FF9FFC] transition text-xl">
             Instagram
           </a>
 
@@ -483,12 +480,10 @@ export default function HomeClient() {
             LinkedIn
           </a>
 
-          <a href="#" className="hover:text-[#FF9FFC] transition text-xl">
+          <a href="https://youtube.com/@sorayaauliamaruapey1853?si=n3iRLOuNSCMd15_i" className="hover:text-[#FF9FFC] transition text-xl">
             YouTube
           </a>
-
         </div>
-
       </section>
 
     </div>

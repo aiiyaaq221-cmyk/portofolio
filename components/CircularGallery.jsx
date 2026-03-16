@@ -334,9 +334,9 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: "/group 5.png", text: 'money tracking' },
-      { image: "/group 6.png", text: 'beasiswaKITA' },
-      { image: "/group 9.png", text: 'Baileo GO Mollucas' },
+      { image: "/Group 5.png", text: 'money tracking' },
+      { image: "/Group 6.png", text: 'beasiswaKITA' },
+      { image: "/Group 9.png", text: 'Baileo GO Mollucas' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
