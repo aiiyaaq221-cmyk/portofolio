@@ -101,10 +101,10 @@ const items = [
       {/* ABOUT + SKILLS */}
       <section id="about" className="py-32 max-w-7xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
 
           {/* FOTO */}
-          <div className="relative">
+          <div className="relative flex justify-center md:justify-start md:translate-x-20">
             <img
               src="/me.jpg"
               alt="profile"
@@ -373,7 +373,7 @@ const items = [
 
       
       {/* CONTACT */}
-      <section id="contact" className="py-32 max-w-7xl mx-auto mt-32">
+      <section id="contact" className="py-25 max-w-7xl mx-auto mt-32">
 
         <h2 className="text-5xl font-bold text-[#FF9FFC] mb-16 text-center">
           Kontak
